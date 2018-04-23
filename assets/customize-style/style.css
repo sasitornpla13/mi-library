@@ -167,3 +167,7 @@ table.dataTable thead > tr > th {
 .thumbnail-box {
   border: #dfe8f1 1px solid;
 }
+
+.tab-pane {
+  padding: 0 15px;
+}
