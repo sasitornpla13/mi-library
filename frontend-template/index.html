@@ -168,7 +168,6 @@
   <script type="text/javascript" src="../assets/js-core/jquery-cookie.js"></script>
 
 
-
   <script type="text/javascript">
     $(window).load(function () {
       setTimeout(function () {
@@ -370,44 +369,143 @@
           <a class="btn btn-gray-custom">Search</a>
         </span>
       </div>
-      <div class="row pad15T">
-        <div class="col-lg-3 text-right">
-          Advance search
+      <div class="row pad0T">
+        <div class="col-lg-offset-3 col-lg-3 text-left">
+          <!-- <b class="pad5L">Advance search</b> -->
+          <a class="btn btn-link text-gray pad0L" href="#">Advance search</a>
         </div>
-        <div class="col-lg-2 text-left">
-          <span class="">Year</span>
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-3 col-lg-1 text-left">
+          <select name="" class="form-control border-gray">
+            <option value="" disabled selected>Year</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
           </select>
         </div>
         <div class="col-lg-3 text-left">
-          <span>Department</span>
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select name="" class="form-control border-gray">
+            <option value="" disabled selected>Department</option>
+            <option>Agricultural Development and Commercialization</option>
+            <option>Trade and Investment Facilitation</option>
+            <option>Innovation and Technological Connectivity</option>
+            <option>RLED-EWEC</option>
           </select>
         </div>
         <div class="col-lg-3 text-left">
-          <span>Country</span>
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select name="" class="form-control border-gray">
+            <option value="" disabled selected>Country</option>
+            <option>Cambodia</option>
+            <option>China</option>
+            <option>Lao PDR</option>
+            <option>Myanmar</option>
+            <option>Thailand</option>
+            <option>Vietnam</option>
           </select>
         </div>
       </div>
     </div>
-    <div class="container bottom-line"></div>
 
+    <div class="container ">
+      <div class="content-box border-top border-dark-red">
+        <div class="content-box-wrapper">
+          <div class="row">
+            <div class="col-lg-4">
+              <form method="post" action="">
+                <div class="content-box">
+                  <h3 class="text-center pad10T">
+                    <b>Sign In</b>
+                  </h3>
+                  <div class="content-box-wrapper">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                        <span class="input-group-addon bg-blue">
+                          <i class="glyph-icon icon-user"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <span class="input-group-addon bg-blue">
+                          <i class="glyph-icon icon-unlock-alt"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <a href="" title="Recover password">Forgot Your Password?</a>
+                    </div>
+                    <button class="btn btn-success btn-block">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-8">
+              <form method="post" action="">
+                <div class="content-box">
+                  <h3 class="text-center pad10T">
+                    <b>New User Registration</b>
+                  </h3>
+                  <div class="content-box-wrapper">
+                    <div class="form-group row">
+                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+
+                      <label class="col-sm-3 control-label">Username : *</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 control-label">First name : *</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+
+                      <label class="col-sm-3 control-label">Username</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+
+                      <label class="col-sm-3 control-label">Username : *</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                      </div>
+                    </div>
+                    <button class="btn btn-success btn-block">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container bottom-line"></div>
 
     <div class="container owl-slider-2 slider-wrapper carousel-wrapper pad10A">
       <div>
@@ -435,7 +533,8 @@
                 of income and wealth and limited access to basic social services. Challenges old and new, including rapid
                 aging and less certain growth prospects, are also increasing the premium on economic security for all. Riding
                 the Wave is about how countries across the region can effectively confront these challenges and achieve inclusive
-                growth.</p>
+                growth.
+              </p>
             </div>
             <br>
             <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
@@ -525,8 +624,8 @@
     <script type="text/javascript" src="../assets/widgets/tabs/tabs.js"></script>
 
     <div class="row container">
-      <div class="col-md-8">
-        <div class="content-box border-top border-gray">
+      <div class="col-md-8 pad0A">
+        <div class="content-box border-top border-dark-red">
           <div class="content-box-wrapper">
             <ul class="nav-responsive nav nav-tabs">
               <li class="active">
@@ -974,22 +1073,22 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="content-box border-top border-gray">
+      <div class="col-md-4 pad0R">
+        <div class="content-box border-top border-dark-red">
           <div class="content-box-wrapper">
             <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/mekonginstitute.org/" data-tabs="timeline" data-width="650"
-              data-height="226" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
-              fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=338&amp;height=226&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmekonginstitute.org%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=650">
-              <span style="vertical-align: bottom; width: 338px; height: 226px;">
-                <iframe name="f77a54ade22b2c" width="650px" height="226px" frameborder="0" allowtransparency="true" allowfullscreen="true"
-                  scg="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FFdM1l_dpErI.js%3Fversion%3D42%23cb%3Df280d74430587d%26domain%3Dal.mekonginstitute.org%26origin%3Dhttp%253A%252F%252Fal.mekonginstitute.org%252Ff937da135eba%26relation%3Dparent.parent&amp;container_width=338&amp;height=226&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmekonginstitute.org%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=650"
-                  style="border: none; visibility: visible; width: 338px; height: 226px;" class=""></iframe>
+              data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+              fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=338&amp;height=230&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmekonginstitute.org%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=650">
+              <span style="vertical-align: bottom; width: 338px; height: 230px;">
+                <iframe name="f77a54ade22b2c" width="650px" height="230px" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                  scg="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FFdM1l_dpErI.js%3Fversion%3D42%23cb%3Df280d74430587d%26domain%3Dal.mekonginstitute.org%26origin%3Dhttp%253A%252F%252Fal.mekonginstitute.org%252Ff937da135eba%26relation%3Dparent.parent&amp;container_width=338&amp;height=230&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmekonginstitute.org%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=650"
+                  style="border: none; visibility: visible; width: 338px; height: 230px;" class=""></iframe>
               </span>
             </div>
           </div>
         </div>
 
-        <div class="content-box border-top border-gray">
+        <div class="content-box border-top border-dark-red">
           <h3 class="content-box-header">
             News
             <span class="float-right">
