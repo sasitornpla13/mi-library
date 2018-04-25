@@ -1,5 +1,8 @@
-body {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body, html, h3 {
+  font-family: "calibri" !important;
+}
+body, html {
+  color: #333;
 }
 
 .m-l-25per {
@@ -14,6 +17,10 @@ body {
 }
 .fz12 {
   font-size: 12px;
+}
+
+.float-left {
+  float: left;
 }
 
 /* Loading Spinner */
@@ -76,7 +83,7 @@ body {
 
 /* top-bar */
 .top-bar {
-  padding: 5px 0;
+  padding: 5px 0 0 0;
 }
 
 /* header menu */
@@ -93,8 +100,7 @@ body {
   display: block;
   padding-left: 30px;
   padding-top: 7px;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 16px;
 }
 
 /* search */
@@ -170,4 +176,69 @@ table.dataTable thead > tr > th {
 
 .tab-pane {
   padding: 0 15px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bottom-line {
+  border-bottom: #C0504D 4px solid;
 }

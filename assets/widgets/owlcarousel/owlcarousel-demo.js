@@ -89,12 +89,12 @@ $(document).ready(function() {
 
     $(".owl-slider-2").owlCarousel({
         lazyLoad: true,
-        autoPlay: 3000,
+        autoPlay: 10000,
         stopOnHover: true,
         navigation: true,
         navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],
-        paginationSpeed: 1000,
-        goToFirstSpeed: 2000,
+        paginationSpeed: 3000,
+        goToFirstSpeed: 3000,
         singleItem: true,
         autoHeight: true,
         transitionStyle: "fade"
@@ -113,8 +113,9 @@ $(document).ready(function() {
     });
 
     $(".owl-slider-4").owlCarousel({
+        loop: true,
         lazyLoad: true,
-        autoPlay: 3000,
+        autoPlay: 5000,
         stopOnHover: true,
         navigation: true,
         navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],

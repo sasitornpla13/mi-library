@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/icons/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/icons/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="../assets/images/icons/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="../assets/images/icons/favicon.png">
+  <link rel="shortcut icon" href="../assets/img/logo/logo-resizeimage-alt.png">
 
 
 
@@ -179,7 +179,7 @@
 
 </head>
 
-<body class="main-header-fixed">
+<body>
 
   <!-- Layerslider -->
 
@@ -188,20 +188,22 @@
   <script type="text/javascript" src="../assets/widgets/layerslider/layerslider-transitions.js"></script>
   <script type="text/javascript" src="../assets/widgets/layerslider/layerslider-demo.js"></script>
 
-  <div id="loading">
-    <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div>
   <div id="page-wrapper">
-    <div class="top-bar bg-topbar">
+    <div class="top-bar bg-dark-red">
       <div class="container">
-        <div class="float-left">
-          <img width="90" src="../assets/img/logo/logo_color.png" alt="MI LOGO">
-        </div>
         <div class="float-right">
+          <img width="85" src="../assets/img/logo/logo_color.png" alt="MI LOGO">
+        </div>
+      </div>
+      <!-- .container -->
+    </div>
+
+    <div class="top-bar bg-header">
+      <div class="container">
+        <div class="float-left mrg20T mrg20B">
+          <img src="../assets/img/logo/logo-resizeimage.png">
+        </div>
+        <div class="float-right mrg20T mrg20B">
           <ul class="header-menu">
             <li class="sfHover">
               <a href="#">Sign in</a>
@@ -215,33 +217,143 @@
           </ul>
         </div>
       </div>
-      <!-- .container -->
     </div>
-    <!-- .top-bar -->
-    <div class="main-header bg-header wow fadeInDown">
+
+    <div class="main-header">
       <div class="container">
-        <a href="index.html" class="header-logo" title="Monarch - Create perfect presentation websites"></a>
-        <!-- .header-logo -->
-        <ul class="header-nav collapse">
+        <ul class="header-nav collapse float-left">
           <li>
-            <a href="departments.html" title="Departments">
-              Departments
+            <a href="#" title="home" class="home">
+              <i class="glyph-icon icon-home"></i>
             </a>
           </li>
           <li>
-            <a href="topics.html" title="Topics">
-              Topics
+            <a href="" title="Departments">
+              <span>Departments
+                <i class="glyph-icon icon-angle-down"></i>
+              </span>
             </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Agricultural Development and Commercialization</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Trade and Investment Facilitation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Innovation and Technological Connectivity</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>RLED-EWEC</span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="collections-browse.html" title="Collections">
-              Collections
+            <a href="" title="Topics">
+              <span>Topics
+                <i class="glyph-icon icon-angle-down"></i>
+              </span>
             </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Agriculture</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>International Economics and Trade</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Trade and Investment Facilitation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>More</span>
+                  <i class="glyph-icon icon-caret-down"></i>
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="gms.html" title="GMS Countries">
-              GMS Countries
+            <a href="" title="Collections">
+              <span>Collections
+                <i class="glyph-icon icon-angle-down"></i>
+              </span>
             </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Books</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Training Reports</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Working Papers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>More</span>
+                  <i class="glyph-icon icon-caret-down"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="" title="GMS Countries">
+              <span>GMS Countries
+                <i class="glyph-icon icon-angle-down"></i>
+              </span>
+            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Cambodia</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>China</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Lao PDR</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Myanmar</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Thailand</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Vietnam</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
         <!-- .header-nav -->
@@ -251,54 +363,139 @@
 
     <!-- Search -->
 
-    <div class="hero-box hero-box-smaller bg-gradient-5 font-inverse">
-      <div class="container">
-        <div class="input-group text-transform-upr m-l-25per w-50per">
-          <input type="text" class="form-control" placeholder="Titles, keywords, etc.">
-          <span class="input-group-btn">
-            <a class="btn btn-primary" href="#">Search</a>
-          </span>
+    <div class="container hero-box hero-box-smaller bg-light-gray">
+      <div class="input-group text-transform-upr m-l-25per w-50per">
+        <input type="text" class="form-control border-gray-dark" placeholder="Titles, keywords, etc.">
+        <span class="input-group-btn">
+          <a class="btn btn-gray-custom">Search</a>
+        </span>
+      </div>
+      <div class="row pad15T">
+        <div class="col-lg-3 text-right">
+          Advance search
         </div>
-        <div id="centerDiv">
-          <ul class="centerUL">
-            <li class="sfHover">
-              <a href="#">Advance search</a>
-            </li>
-            <li>
-              <a href="#">Year</a>
-            </li>
-            <li>
-              <a href="#">Departments</a>
-            </li>
-            <li>
-              <a href="#">Country</a>
-            </li>
-          </ul>
+        <div class="col-lg-2 text-left">
+          <span class="">Year</span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="col-lg-3 text-left">
+          <span>Department</span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="col-lg-3 text-left">
+          <span>Country</span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
       </div>
-      <div class="hero-overlay bg-black"></div>
     </div>
+    <div class="container bottom-line"></div>
 
-    <div id="page-content" class="container mrg25T mrg25B">
-      <div class="row">
-        <div class="post-image col-md-3">
-          <a href="../assets/image-resources/stock-images/img-44.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
-            <img class="img-responsive lazy img-rounded" src="../assets/image-resources/stock-images/img-44.jpg" data-original="../assets/image-resources/stock-images/img-44.jpg"
-              alt="">
-          </a>
-        </div>
-        <div class="post-content-wrapper col-md-9">
-          <a class="post-title" href="#" title="">
-            <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
-          </a>
-          <div class="post-content">
-            <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because
-              occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
-            <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently
-              occur that pleasures have to be repudiated and annoyances accepted.</p>
+
+    <div class="container owl-slider-2 slider-wrapper carousel-wrapper pad10A">
+      <div>
+        <div class="row">
+          <div class="post-image col-md-3">
+            <a href="../assets/image-resources/stock-images/img-44.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+              <img class="img-responsive lazy img-rounded" src="../assets/image-resources/stock-images/img-44.jpg" data-original="../assets/image-resources/stock-images/img-44.jpg"
+                alt="">
+            </a>
           </div>
-          <br>
-          <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+          <div class="post-content-wrapper col-md-9">
+            <a class="post-title" href="#" title="">
+              <h3>
+                <b>Riding the Wave: An East Asian Miracle for the 21st Century</b>
+              </h3>
+            </a>
+            <div class="post-content">
+              <p>The wave of prosperity across the region since the 1980s has lifted three out of five of its citizens into
+                economic security, where their risk of falling into poverty is minimal. And a solid middle class has emerged
+                in most countries. These successes, however, do not guarantee that inclusive growth--growth that reduces
+                poverty and delivers upward mobility and economic security for all—is ensured. The region has become more
+                diverse, with progress varying across countries and extreme poverty increasingly concentrated among specific
+                groups. Roughly one-fifth of the region's population remains at risk of falling into poverty, and prospects
+                for upward mobility are increasingly elusive across the income distribution, reflecting a growing concentration
+                of income and wealth and limited access to basic social services. Challenges old and new, including rapid
+                aging and less certain growth prospects, are also increasing the premium on economic security for all. Riding
+                the Wave is about how countries across the region can effectively confront these challenges and achieve inclusive
+                growth.</p>
+            </div>
+            <br>
+            <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="post-image col-md-3">
+            <a href="../assets/image-resources/stock-images/img-2.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+              <img class="img-responsive lazy img-rounded" src="../assets/image-resources/stock-images/img-2.jpg" data-original="../assets/image-resources/stock-images/img-44.jpg"
+                alt="">
+            </a>
+          </div>
+          <div class="post-content-wrapper col-md-9">
+            <a class="post-title" href="#" title="">
+              <h3>
+                <b>The Jobs of Tomorrow: Technology, Productivity, and Prosperity in Latin America and the Caribbean</b>
+              </h3>
+            </a>
+            <div class="post-content">
+              <p>This book squarely addresses both sets of concerns with new research showing that adoption of digital technologies
+                offers a pathway to more inclusive growth by increasing adopting firms’ outputs, with the jobs-enhancing
+                impact of technology adoption assisted by growth-enhancing policies that foster sizable output expansion.
+                The research reported here demonstrates with economic theory and data from Argentina, Brazil, Chile, Colombia
+                and Mexico that lower-skilled workers can benefit from adoption of productivity-enhancing technologies biased
+                towards skilled workers, and often do. The inclusive jobs outcomes arise when the effects of increased productivity
+                and expanding output overcome the substitution of workers for technology.</p>
+            </div>
+            <br>
+            <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="post-image col-md-3">
+            <a href="../assets/image-resources/stock-images/img-3.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+              <img class="img-responsive lazy img-rounded" src="../assets/image-resources/stock-images/img-3.jpg" data-original="../assets/image-resources/stock-images/img-44.jpg"
+                alt="">
+            </a>
+          </div>
+          <div class="post-content-wrapper col-md-9">
+            <a class="post-title" href="#" title="">
+              <h3>
+                <b>The Challenge of Agricultural Pollution: Evidence from China, Vietnam, and the Philippines</b>
+              </h3>
+            </a>
+            <div class="post-content">
+              <p>In parts of China, Vietnam, and the Philippines—the countries studied in The Challenge of Agricultural Pollution—this
+                pattern of highly productive yet highly polluting agriculture has been unfolding with consequences that remain
+                poorly understood. With large numbers of pollutants and sources, agricultural pollution is often undetected
+                and unmeasured. When assessments do occur, they tend to take place within technical silos, and so the different
+                ecological and socioeconomic risks are seldom considered as a whole, while some escape study entirely. However,
+                when agricultural pollution is considered in its entirety, both the significance of its impacts and the relative
+                neglect of them become clear.</p>
+            </div>
+            <br>
+            <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+          </div>
         </div>
       </div>
     </div>
@@ -835,7 +1032,7 @@
   <br>
   <br>
 
-  <div class="main-footer bg-gradient-5 clearfix">
+  <div class="main-footer bg-dark-red clearfix">
     <div class="container clearfix pad35B">
       <div class="col-md-offset-1 col-md-2">
         <a href="#" title="About us">About us</a>

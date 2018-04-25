@@ -296,7 +296,7 @@
     .boxed-layout #page-wrapper,
     .boxed-layout #page-header,
     .container {
-        max-width: 970px;
+        max-width: 80%;
     }
     .col-md-1,
     .col-md-2,
