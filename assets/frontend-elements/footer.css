@@ -2,14 +2,17 @@
 
 .main-footer {
     position: relative;
-    padding-top: 35px;
-    color: rgba(255, 255, 255, .3);
+    padding-top: 25px;
+    /* color: rgba(255, 255, 255, .3); */
+    color: #333;
 }
 .main-footer a {
-    color: rgba(255, 255, 255, .4);
+    /* color: rgba(255, 255, 255, .4); */
+    color: #333;
 }
 .main-footer a:hover {
-    color: rgba(255, 255, 255, .8);
+    /* color: rgba(255, 255, 255, .8); */
+    color: #333;
 }
 .main-footer p.about-us {
     font-size: 12px;
@@ -37,7 +40,7 @@
     display: block;
 }
 .main-footer .footer-nav li {
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
 }
 .main-footer .footer-nav li a {
     border-radius: 3px;
@@ -45,12 +48,12 @@
     font-size: 12px;
 }
 .main-footer .footer-nav li a:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(122, 122, 122, 0.1);
 }
 .main-footer .header {
     font-size: 12px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .8);
+    /* color: rgba(255, 255, 255, .8); */
     padding: 0 0 20px;
 }
 .main-footer .no-gutter .col-xs-4 {
@@ -85,8 +88,8 @@
     list-style: none;
 }
 .footer-pane {
-    background: rgba(0,0,0,0.1);
-    padding: 20px 0;
+    /* background: rgba(0,0,0,0.1); */
+    padding: 10px 0;
     font-size: 12px;
 }
 .footer-pane .logo {

@@ -1,4 +1,4 @@
-body, html, h3 {
+body, html, h3, h4 {
   font-family: "calibri" !important;
 }
 body, html {
@@ -241,4 +241,20 @@ table.dataTable thead > tr > th {
 
 .bottom-line {
   border-bottom: #C0504D 3px solid;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.main-footer .footer-nav li a {
+  padding: 5px 5px;
+}
+
+.main-footer a {
+  font-size: 13px;
+}
+
+.main-footer p.about-us {
+  padding-top: 10px;
 }

@@ -16,6 +16,8 @@
   <link rel="apple-touch-icon-precomposed" href="../assets/images/icons/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="../assets/img/logo/logo-resizeimage-alt.png">
 
+  
+  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
 
 
   <!-- HELPERS -->
@@ -163,9 +165,10 @@
   <script type="text/javascript" src="../assets/js-core/jquery-ui-widget.js"></script>
   <script type="text/javascript" src="../assets/js-core/jquery-ui-mouse.js"></script>
   <script type="text/javascript" src="../assets/js-core/jquery-ui-position.js"></script>
-  <script type="text/javascript" src="../assets/js-core/transition.js"></script>
+  <!-- <script type="text/javascript" src="../assets/js-core/transition.js"></script> -->
   <script type="text/javascript" src="../assets/js-core/modernizr.js"></script>
   <script type="text/javascript" src="../assets/js-core/jquery-cookie.js"></script>
+  
 
 
   <script type="text/javascript">
@@ -414,11 +417,23 @@
           <div class="row">
             <div class="col-lg-4">
               <form method="post" action="">
-                <div class="content-box">
+                <div class="content-box mrg0B">
                   <h3 class="text-center pad10T">
                     <b>Sign In</b>
                   </h3>
                   <div class="content-box-wrapper">
+                    <div class="form-group row">
+                      <label class="col-sm-6 control-label">
+                        <h4>
+                          <b>&nbsp;</b>
+                        </h4>
+                      </label>
+                      <label class="col-sm-5 control-label">
+                        <h4>
+                          <b>&nbsp;</b>
+                        </h4>
+                      </label>
+                    </div>
                     <div class="form-group">
                       <div class="input-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
@@ -436,66 +451,107 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <a href="" title="Recover password">Forgot Your Password?</a>
+                      <label>
+                        <input type="checkbox" id="loginCheckbox1" class="custom-checkbox"> Remember me
+                      </label>
                     </div>
-                    <button class="btn btn-success btn-block">Sign In</button>
+                    <div class="form-group row">
+                      &nbsp;
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-4">
+                        <button class="btn btn-primary btn-block">Sign in</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <a href="" title="Recover password">Forgot your password?</a>
+                    </div>
+                    <div class="form-group row">
+                      &nbsp;
+                    </div>
                   </div>
                 </div>
               </form>
             </div>
             <div class="col-lg-8">
               <form method="post" action="">
-                <div class="content-box">
+                <div class="content-box mrg0B">
                   <h3 class="text-center pad10T">
                     <b>New User Registration</b>
                   </h3>
                   <div class="content-box-wrapper">
                     <div class="form-group row">
-                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <label class="col-sm-6 control-label">
+                        <h4>
+                          <b>About you</b>
+                        </h4>
+                      </label>
+                      <label class="col-sm-5 control-label">
+                        <h4>
+                          <b>Username and password</b>
+                        </h4>
+                      </label>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-2 control-label">Title :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <select name="" class="form-control border-gray">
+                          <option value="" disabled selected>Select Title</option>
+                          <option>Mr</option>
+                          <option>Mrs</option>
+                          <option>Miss</option>
+                          <option>Ms</option>
+                          <option>Sir</option>
+                          <option>Dr</option>
+                          <option>Lady</option>
+                          <option>Lord</option>
+                        </select>
                       </div>
 
-                      <label class="col-sm-3 control-label">Username : *</label>
+                      <label class="col-md-offset-1 col-sm-3 control-label">Username :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label class="col-sm-3 control-label">First name : *</label>
+                      <label class="col-sm-2 control-label">First name :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
 
-                      <label class="col-sm-3 control-label">Username</label>
+                      <label class="col-md-offset-1 col-sm-3 control-label">Password :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <label class="col-sm-2 control-label">Last name</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
 
-                      <label class="col-sm-3 control-label">Username : *</label>
+                      <label class="col-md-offset-1 col-sm-3 control-label">Retype password :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <label class="col-sm-2 control-label">Email address :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label class="col-sm-3 control-label">Title (e.g Mr., Mrs., Dr.)</label>
+                      <label class="col-sm-2 control-label">Retype email :</label>
                       <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                        <input type="text" class="form-control" id="" placeholder="">
                       </div>
                     </div>
-                    <button class="btn btn-success btn-block">Sign In</button>
+                    <div class="form-group row">
+                      <div class="col-sm-2 col-sm-offset-10 ">
+                        <button class="btn btn-success btn-block">Save</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -599,33 +655,322 @@
       </div>
     </div>
 
-    <!-- jQueryUI Tabs -->
-
-    <!--<link rel="stylesheet" type="text/css" href="../assets/widgets/tabs-ui/tabs.css">-->
-    <script type="text/javascript" src="../assets/widgets/tabs-ui/tabs.js"></script>
-    <script type="text/javascript">
-      /* jQuery UI Tabs */
-
-      $(function () {
-        "use strict";
-        $(".tabs").tabs();
-      });
-
-      $(function () {
-        "use strict";
-        $(".tabs-hover").tabs({
-          event: "mouseover"
-        });
-      });
-    </script>
-
     <!-- Boostrap Tabs -->
-
     <script type="text/javascript" src="../assets/widgets/tabs/tabs.js"></script>
 
     <div class="row container">
       <div class="col-md-8 pad0A">
         <div class="content-box border-top border-dark-red">
+          <div class="content-box-wrapper">
+            <div class="tab-content">
+              <div class="tab-pane fade active in pad0A" id="faq-tab-1">
+                <div class="panel-group" id="accordion5">
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseOne">
+                          Collapsible Group Item #1
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">The new common language will be more simple and regular than the existing European languages. It
+                          will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth.</p>
+
+                        <p class="mrg15B">For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words. Everyone realizes why a new common language
+                          would be desirable: one could refuse to pay expensive translators. To achieve this, it would be
+                          necessary to have uniform grammar, pronunciation and more common words.</p>
+
+                        <p class="mrg15B">If several languages coalesce, the grammar of the resulting language is more simple and regular than
+                          that of the individual languages. The new common language will be more simple and regular than
+                          the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
+                          To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                          mine told me what Occidental is.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo">
+                          Collapsible Group Item #2
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words. Everyone realizes why a new common language
+                          would be desirable: one could refuse to pay expensive translators. To achieve this, it would be
+                          necessary to have uniform grammar, pronunciation and more common words.</p>
+                        <p class="mrg15B">The European languages are members of the same family. Their separate existence is a myth. For science,
+                          music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar,
+                          their pronunciation and their most common words. Everyone realizes why a new common language would
+                          be desirable: one could refuse to pay expensive translators.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseThree">
+                          Collapsible Group Item #3
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">The European languages are members of the same family. Their separate existence is a myth. For science,
+                          music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar,
+                          their pronunciation and their most common words. Everyone realizes why a new common language would
+                          be desirable: one could refuse to pay expensive translators.</p>
+
+                        <p class="mrg15B">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                          If several languages coalesce, the grammar of the resulting language is more simple and regular
+                          than that of the individual languages. The new common language will be more simple and regular
+                          than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade pad0A" id="faq-tab-2">
+                <div class="panel-group" id="accordion1">
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                          Collapsible Group Item #1
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne1" class="panel-collapse collapse in">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">The European languages are members of the same family. Their separate existence is a myth. For science,
+                          music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar,
+                          their pronunciation and their most common words. Everyone realizes why a new common language would
+                          be desirable: one could refuse to pay expensive translators.</p>
+
+                        <p class="mrg15B">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                          If several languages coalesce, the grammar of the resulting language is more simple and regular
+                          than that of the individual languages. The new common language will be more simple and regular
+                          than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                          Collapsible Group Item #2
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo1" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine
+                          told me what Occidental is. The European languages are members of the same family. Their separate
+                          existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages
+                          only differ in their grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                          Collapsible Group Item #3
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree1" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">The new common language will be more simple and regular than the existing European languages. It
+                          will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth.</p>
+
+                        <p class="mrg15B">For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words. Everyone realizes why a new common language
+                          would be desirable: one could refuse to pay expensive translators. To achieve this, it would be
+                          necessary to have uniform grammar, pronunciation and more common words.</p>
+
+                        <p class="mrg15B">If several languages coalesce, the grammar of the resulting language is more simple and regular than
+                          that of the individual languages. The new common language will be more simple and regular than
+                          the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
+                          To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                          mine told me what Occidental is.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade pad0A" id="faq-tab-3">
+                <div class="panel-group" id="accordion2">
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2">
+                          Collapsible Group Item #1
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne2" class="panel-collapse collapse in">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">The European languages are members of the same family. Their separate existence is a myth. For science,
+                          music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar,
+                          their pronunciation and their most common words. Everyone realizes why a new common language would
+                          be desirable: one could refuse to pay expensive translators.</p>
+
+                        <p class="mrg15B">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                          If several languages coalesce, the grammar of the resulting language is more simple and regular
+                          than that of the individual languages. The new common language will be more simple and regular
+                          than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2">
+                          Collapsible Group Item #2
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo2" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine
+                          told me what Occidental is. The European languages are members of the same family. Their separate
+                          existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages
+                          only differ in their grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages. The new common language will be more
+                          simple and regular than the existing European languages.</p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2">
+                          Collapsible Group Item #3
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree2" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth. For
+                          science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages. The new common language will be more
+                          simple and regular than the existing European languages.</p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade pad0A" id="faq-tab-4">
+                <div class="panel-group" id="accordion3">
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne4">
+                          Collapsible Group Item #1
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne4" class="panel-collapse collapse in">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth. For
+                          science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages. The new common language will be more
+                          simple and regular than the existing European languages.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo4">
+                          Collapsible Group Item #2
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo4" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth. For
+                          science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages. The new common language will be more
+                          simple and regular than the existing European languages.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree4">
+                          Collapsible Group Item #3
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree4" class="panel-collapse collapse">
+                      <div class="panel-body pad0B">
+                        <p class="mrg15B">It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will
+                          seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                          The European languages are members of the same family. Their separate existence is a myth. For
+                          science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their
+                          grammar, their pronunciation and their most common words.</p>
+
+                        <p class="mrg15B">Everyone realizes why a new common language would be desirable: one could refuse to pay expensive
+                          translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and
+                          more common words. If several languages coalesce, the grammar of the resulting language is more
+                          simple and regular than that of the individual languages. The new common language will be more
+                          simple and regular than the existing European languages. It will be as simple as Occidental; in
+                          fact, it will be Occidental.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="content-box-wrapper">
             <ul class="nav-responsive nav nav-tabs">
               <li class="active">
@@ -1076,6 +1421,36 @@
       <div class="col-md-4 pad0R">
         <div class="content-box border-top border-dark-red">
           <div class="content-box-wrapper">
+            <ul class="list-group">
+              <li class="mrg10B">
+                <a href="#faq-tab-1" data-toggle="tab" class="list-group-item bg-white">
+                  <i class="glyph-icon icon-angle-left mrg0A"></i>
+                  <span class="mrg15L">How to get paid</span>
+                </a>
+              </li>
+              <li class="mrg10B">
+                <a href="#faq-tab-2" data-toggle="tab" class="list-group-item bg-white">
+                  <i class="glyph-icon icon-angle-left mrg0A"></i>
+                  <span class="mrg15L">ThemeForest related</span>
+                </a>
+              </li>
+              <li class="mrg10B">
+                <a href="#faq-tab-3" data-toggle="tab" class="list-group-item bg-white">
+                  <i class="glyph-icon icon-angle-left mrg0A"></i>
+                  <span class="mrg15L">Common questions</span>
+                </a>
+              </li>
+              <li class="mrg10B">
+                <a href="#faq-tab-4" data-toggle="tab" class="list-group-item bg-white">
+                  <i class="glyph-icon icon-angle-left mrg0A"></i>
+                  <span class="mrg15L">Terms of service</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-box border-top border-dark-red">
+          <div class="content-box-wrapper">
             <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/mekonginstitute.org/" data-tabs="timeline" data-width="650"
               data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
               fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=338&amp;height=230&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmekonginstitute.org%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=650">
@@ -1109,7 +1484,8 @@
                   <b>Normal box with scrollable content.</b>
                 </p>
                 <p class="fz13">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
               </div>
               <div class="pad10B pad10T border-bottom">
                 <p class="pad5B">
@@ -1119,7 +1495,8 @@
                   <b>Normal box with scrollable content.</b>
                 </p>
                 <p class="fz13">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
               </div>
             </div>
           </div>
@@ -1129,27 +1506,169 @@
   </div>
 
   <br>
-  <br>
 
-  <div class="main-footer bg-dark-red clearfix">
-    <div class="container clearfix pad35B">
-      <div class="col-md-offset-1 col-md-2">
-        <a href="#" title="About us">About us</a>
+  <div class="main-footer clearfix  bg-gray-alt">
+    <div class="container clearfix pad15B">
+      <div class="col-md-4">
+        <div class="header">About us</div>
+        <i>
+          Capacity Development for Regional Cooperation and Integration
+        </i>
+        <p class="about-us">
+          Mekong Institute (MI) is an intergovernmental organization (IGO) founded by the six member countries of the Greater Mekong
+          Subregion (GMS), namely Cambodia, P.R. China (Yunnan Province and Guangxi Zhuang Autonomous Region), Lao PDR, Myanmar,
+          Thailand and Vietnam. We provide, implement and facilitate integrated human resource development (HRD), capacity
+          building programs and development projects related to regional cooperation and integration .
+        </p>
+        <a class="btn btn-link font-blue-alt pad0A" href="#">More</a>
       </div>
       <div class="col-md-2">
-        <a href="#" title="Departments">Departments</a>
+        <div class="header">
+          <a href="#" title="Departments">Departments</a>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">
+              <span>Agricultural Development and Commercialization</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Trade and Investment Facilitation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Innovation and Technological Connectivity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Regional and Local Economic Development – East West Economic Corridor (RLED-EWEC)</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="col-md-2">
-        <a href="#" title="Topics">Topics</a>
+        <div class="header">
+          <a href="#" title="Topics">Topics</a>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">
+              <span>Agriculture</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>International Economics and Trade</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Trade and Investment Facilitation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Innovation and Technological Connectivity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Energy</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Education</span>
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn-link font-blue-alt pad0A" href="#">More</a>
       </div>
       <div class="col-md-2">
-        <a href="#" title="Collections">Collections</a>
+        <div class="header">
+          <a href="#" title="Collections">Collections</a>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">
+              <span>Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Working Papers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Training Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Annual Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Mekong Connection</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Case study</span>
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn-link font-blue-alt pad0A" href="#">More</a>
       </div>
       <div class="col-md-2">
-        <a href="#" title="GMS countries">GMS countries</a>
+        <div class="header">
+          <a href="#" title="GMS countries">GMS countries</a>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">
+              <span>Cambodia</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>China</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Lao PDR</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Myanmar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Thailand</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Vietnam</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Other</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="footer-pane">
+    <div class="footer-pane bg-dark-red ">
       <div class="container clearfix">
         <div class="logo">&copy; 2018 Mekong Institute All right reserved</div>
         <div class="footer-nav-bottom">
@@ -1159,8 +1678,8 @@
     </div>
   </div>
 
-
   <!-- FRONTEND ELEMENTS -->
+  <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.js"></script>
 
   <!-- Skrollr -->
 
